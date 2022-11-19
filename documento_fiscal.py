@@ -23,9 +23,9 @@ class DocumentoFiscal:
         else:
             return False
 
-        check_Digito_Verificador_1 = self.calcular_digito_verificador(
+        digito_verificador_1 = self.calcular_digito_verificador(
             digitos, 1)
-        check_Digito_Verificador_2 = self.calcular_digito_verificador(
-            digitos + str(check_Digito_Verificador_1), 2)
+        digito_verificador_2 = self.calcular_digito_verificador(
+            digitos + str(digito_verificador_1), 2)
 
-        return documento == digitos + str(check_Digito_Verificador_1) + str(check_Digito_Verificador_2)
+        return documento == digitos + str(digito_verificador_1) + str(digito_verificador_2)
