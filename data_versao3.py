@@ -9,5 +9,5 @@ class Data:
         return f'Hoje é {self.dia_semana}, {self.dia} de {self.mes} de {self.ano}'
 
 
-data_de_hoje = Data('Quarta-feira', 16, 'Novembro', 2022)
+data_de_hoje = Data('Domingo', 20, 'Novembro', 2022)
 print(data_de_hoje)
